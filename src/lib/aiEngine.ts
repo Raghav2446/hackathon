@@ -1,6 +1,5 @@
-
 import { pipeline } from '@huggingface/transformers';
-import { natural } from 'natural';
+import * as natural from 'natural';
 
 // Advanced AI Engine with RAG capabilities
 export class AIEngine {
@@ -138,7 +137,7 @@ export class AIEngine {
   }
 
   private createSimpleEmbedding(text: string): number[] {
-    const words = natural.WordTokenizer().tokenize(text.toLowerCase()) || [];
+    const words = natural.WordTokenizer.prototype.tokenize(text.toLowerCase()) || [];
     const vocabulary = ['satellite', 'data', 'india', 'mission', 'weather', 'ocean', 'land', 'image', 'resolution', 'coverage'];
     
     return vocabulary.map(word => 
