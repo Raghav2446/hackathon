@@ -122,7 +122,7 @@ const SystemDashboard = () => {
             </div>
             <div className="mt-2 flex items-center text-sm">
               <CheckCircle className="w-4 h-4 text-blue-500 mr-1" />
-              <span className="text-blue-600">Within target (< 200ms)</span>
+              <span className="text-blue-600">Within target (&lt; 200ms)</span>
             </div>
           </CardContent>
         </Card>
